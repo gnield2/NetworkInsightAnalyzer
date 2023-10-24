@@ -1,0 +1,2 @@
+# Ignore all json files generated from getDeviceData.py or test_speed.py
+.json
