@@ -1,0 +1,28 @@
+{
+    "Current Connection": {
+        "RSSI": -61.0,
+        "Signal": 78,
+        "Band": "5 GHz",
+        "Channel": "116",
+        "Utilization": "10 (3 %)",
+        "SSID": "eduroam",
+        "BSSID": "70:6d:15:be:36:ae",
+        "Receive rate (Mbps)": "144.4",
+        "Transmit rate (Mbps)": "144.4"
+    },
+    "All Connections": {
+        "eduroam": {
+            "70:6d:15:be:36:ae": {
+                "RSSI": -61.0,
+                "Signal": 78,
+                "Band": "5 GHz",
+                "Channel": "116",
+                "Utilization": "10 (3 %)",
+                "SSID": "eduroam",
+                "BSSID": "70:6d:15:be:36:ae",
+                "Receive rate (Mbps)": "144.4",
+                "Transmit rate (Mbps)": "144.4"
+            }
+        }
+    }
+}
