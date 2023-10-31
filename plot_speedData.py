@@ -53,9 +53,9 @@ def main():
     display_stats(uploadSpeeds, "Upload Speed (Mbps)")
     display_stats(pings, "Ping (ms)")
 
-    plot_data(timestamps, downloadSpeeds, "Download Speed (Mbps)")
-    plot_data(timestamps, uploadSpeeds, "Upload Speed (Mbps)")
-    plot_data(timestamps, pings, "Ping (ms)")
+    plot_data(timestamps, downloadSpeeds, "Download Speed (Mbps)", "Download Speed (Mbps)")
+    plot_data(timestamps, uploadSpeeds, "Upload Speed (Mbps)" "Upload Speed (Mbps)")
+    plot_data(timestamps, pings, "Ping (ms)", "Ping (ms)")
 
     hour_labels = [f'{int(hour)}:{math.floor(int((hour % 1) * 60)):02}' for hour in timestamps]
     plt.xticks(timestamps, hour_labels)
