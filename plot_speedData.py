@@ -1,5 +1,5 @@
 import os
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import json
 import sys
 import math
@@ -54,7 +54,7 @@ def main():
     display_stats(pings, "Ping (ms)")
 
     plot_data(timestamps, downloadSpeeds, "Download Speed (Mbps)", "Download Speed (Mbps)")
-    plot_data(timestamps, uploadSpeeds, "Upload Speed (Mbps)" "Upload Speed (Mbps)")
+    plot_data(timestamps, uploadSpeeds, "Upload Speed (Mbps)", "Upload Speed (Mbps)")
     plot_data(timestamps, pings, "Ping (ms)", "Ping (ms)")
 
     hour_labels = [f'{int(hour)}:{math.floor(int((hour % 1) * 60)):02}' for hour in timestamps]
