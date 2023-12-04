@@ -150,5 +150,7 @@ def getDeviceData(dt, dirname):
     #return heatCount, [float(lat), float(lng)]
     return heatCount
 
+# Main call added in order to treat this program as its own entity -GN
+# Arguments are the current date and time, and the directory the data will be inputted into
 if __name__ == '__main__':
 	getDeviceData(str(datetime.now()).split(), str(datetime.now()).split()[0])
