@@ -46,8 +46,6 @@ def main():
         data = read_json_file(file_path)
         
         # Divide the data into three different arrays: Down Speed, Up Speed, and Ping
-        # You can change this if you want to read different data, but this is the data
-        # that was most pertinent for this project.
         ds = data.get("Download Speed (Mbps)")
         us = data.get("Upload Speed (Mbps)")
         p = data.get("Ping (ms)")
