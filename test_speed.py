@@ -1,3 +1,15 @@
+###################################
+#######    test_speed.py    #######
+# Author: Gabriel Nield           #
+# Email:  gabrielnield@proton.me  #
+###################################
+#################################################################################################
+# This program was heavily inspired from getDeviceData.py, originally created by Connor Riley.
+# This, however, uses Ookla Speedtest to acquire data such as Download Speed, Upload Speed, and
+# Ping. Just like getDeviceData.py, the data is put into json files, this time beneath a
+# directory titled "speedData".
+#################################################################################################
+
 import os
 import json
 import speedtest

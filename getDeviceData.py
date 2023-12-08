@@ -1,3 +1,20 @@
+############################################
+##########    getDeviceData.py    ##########
+# Code originally created by Connor Riley  #
+# Modifications by Gabriel Nield           #
+# Email: gabrielnield@proton.me            #
+############################################
+#######################################################################################
+# This program runs a comprehensive diagnostic test on your current Internet Connection
+# and outputs that data into json files that represent the date and time the program
+# was run. The json files show statistics such as signal strength, RSSI, current and
+# available BSSIDs and Access Points, and more.
+#######################################################################################
+# All of the data that the program receives was thanks to Connor's original vision. I
+# made modifications that include ensuring that any json files would be created in a
+# "data" directory, and that the program had its own main call.
+#######################################################################################
+
 import sys
 import os
 import subprocess

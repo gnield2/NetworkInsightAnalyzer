@@ -1,3 +1,15 @@
+##################################
+#######    plot_data.py    #######
+# Author: Gabriel Nield          #
+# Email:  gabrielnield@proton.me #
+##################################
+###############################################################################################
+# This is a program that plots data from json files created from the program getDeviceData.py.
+# The user must input a specific date in the function call so that only the data from that date 
+# will be plotted. Right now the plotting method is somewhat crude, but one can expect this to 
+# work with a tool such as d3js.
+###############################################################################################
+
 import os
 import matplotlib.pyplot as plt
 import json
