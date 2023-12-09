@@ -1,2 +1,2 @@
+# Ignore any json files created from running getDeviceData.py or test_speed.py
 *.json
-*.sh
