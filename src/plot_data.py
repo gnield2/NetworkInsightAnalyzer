@@ -38,7 +38,7 @@ def display_stats(data):
 def main():
     # The user must specify an argument for the particular folder/date they want to read from
     # i.e. $> python3 plot_data.py 2023-10-02 to read data from October 02, 2023
-    directory = 'data/' + sys.argv[1]
+    directory = '../data/' + sys.argv[1]
     json_files = [f for f in os.listdir(directory) if f.endswith('.json')]
     bssids = []
     timestamps = []

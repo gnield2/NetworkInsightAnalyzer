@@ -25,7 +25,7 @@ def getDeviceData(dt, dirname):
     #runs a process to get information about the current network connection
     results = subprocess.check_output(['netsh', 'wlan', 'show', 'interfaces']).decode()
     # the next 2 lines are an addition by Gabriel Nield
-    dirname = f"data/{dirname}"
+    dirname = f"../data/{dirname}"
     os.makedirs(dirname, exist_ok=True)
 
     output = results.split('\n')

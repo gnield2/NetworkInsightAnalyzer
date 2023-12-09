@@ -26,7 +26,7 @@ def main():
     # The data for these runs will go into a subdirectory containing the date they were run
     # i.e. if this program was run on October 02, 2023, the resulting data will be forwarded
     # to the directory speedData/2023-10-02
-    directory = f"speedData/{date}"
+    directory = f"../speedData/{date}"
     os.makedirs(directory, exist_ok=True)
 
     servers = []
