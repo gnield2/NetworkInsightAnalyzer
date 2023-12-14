@@ -15,13 +15,15 @@ import time
 import subprocess
 
 def run_periodic_task(program_name):
-	try:
-		subprocess.run(["python", program_name])
-	except Exception as e:
-		print(f"Error running the script: {e}")
+	def run_program():
+		try:
+			subprocess.run(["python3", program_name])
+		except Exception as e:
+			print(f"Error running the script: {e}")
+	return run_program
 
-schedule.every(1).minutes.do("getDeviceData.py")
-schedule.every(1).minutes.do("test_speed.py")
+schedule.every(1).minutes.do(run_periodic_task("src/getDeviceData.py"))
+schedule.every(1).minutes.do(run_periodic_task("src/test_speed.py"))
 
 while True:
 	schedule.run_pending()
