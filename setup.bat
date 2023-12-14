@@ -20,4 +20,5 @@ if errorlevel 1 (
 
 REM Install necessary Python libraries
 echo Installing necessary python libraries...
-pip3 install matplotlib schedule speedtest
+pip3 uninstall speedtest
+pip3 install matplotlib schedule speedtest-cli
