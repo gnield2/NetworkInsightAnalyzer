@@ -20,4 +20,4 @@ if errorlevel 1 (
 
 REM Install necessary Python libraries
 echo Installing necessary python libraries...
-pip3 install subprocess matplotlib.pyplot schedule speedtest
+pip3 install matplotlib schedule speedtest
